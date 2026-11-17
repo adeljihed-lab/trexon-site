@@ -333,3 +333,34 @@ footer a:hover{color:#fff}
 @media (max-width:1040px){.sectors{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.sectors{grid-template-columns:1fr}}
 .legal{max-width:760px}.legal h2{font-size:22px;margin:34px 0 10px}.legal h2:first-child{margin-top:0}.legal p{font-size:16px;line-height:1.65;color:var(--ink-2,#3a4250)}
+
+/* chiffres clés (accueil) */
+.facts-band{background:#fff;border-bottom:1px solid var(--line)}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;padding-block:34px}
+.facts div{padding:4px 26px;border-left:1px solid var(--line);display:grid;gap:6px}
+.facts div:first-child{border-left:0;padding-left:0}
+.facts b{font-family:var(--h);font-weight:700;font-size:clamp(19px,1.8vw,24px);letter-spacing:-.01em;color:var(--navy)}
+.facts span{font-size:14.5px;color:var(--graph);line-height:1.45}
+/* organisation */
+#organisation .eq-grid{margin-top:0}
+/* secteurs : six cartes */
+.sectors.six{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:6px}
+.sectors.six .sector:nth-child(3n){border-right:0;margin-right:0}
+.sectors.six .sector:last-child{border-right:0}
+.note a{color:var(--elec);text-decoration:underline;text-underline-offset:3px}
+@media (max-width:1040px){
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}
+  .facts div:nth-child(3){border-left:0;padding-left:0}
+  .sectors.six{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sectors.six .sector:nth-child(3n){border-right:1px solid var(--line);margin-right:22px}
+  .sectors.six .sector:nth-child(2n){border-right:0;margin-right:0}
+}
+@media (max-width:640px){
+  .facts{grid-template-columns:1fr}
+  .facts div{border-left:0;padding-left:0}
+  .sectors.six{grid-template-columns:1fr}
+  .sectors.six .sector{border-right:0;margin-right:0}
+}
+@media (max-width:640px){
+  .sectors.six .sector:nth-child(n){border-right:0;margin-right:0}
+}
