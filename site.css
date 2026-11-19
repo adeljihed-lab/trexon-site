@@ -364,3 +364,7 @@ footer a:hover{color:#fff}
 @media (max-width:640px){
   .sectors.six .sector:nth-child(n){border-right:0;margin-right:0}
 }
+
+/* casse : initiale en majuscule, la marque reste en minuscules */
+h1::first-letter,h2::first-letter,h3::first-letter,h4::first-letter,.eq-grid b::first-letter,.tile h3::first-letter,footer h5::first-letter,label::first-letter,.links>a::first-letter,.btn span::first-letter,.btn-g::first-letter,.subnav a::first-letter,.faq summary::first-letter,.tile .more::first-letter{text-transform:uppercase}
+.eq-grid b{display:block}
